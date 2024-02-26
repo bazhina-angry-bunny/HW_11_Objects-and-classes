@@ -1,5 +1,4 @@
 public class Main {
-
     public static void main(String[] args) {
 
         Author author1 = new Author("Harper", "", "Lee");
@@ -17,7 +16,5 @@ public class Main {
 
         Book book2 = new Book("The catcher in the rye", author2, 2011);
         System.out.println(book2);
-
-
     }
 }

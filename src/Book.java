@@ -15,8 +15,9 @@ public class Book {
     public String getBookTitle() {
         return bookTitle;
     }
-    public void setBookTitle(String bookTitle) {
-        this.bookTitle = bookTitle;
+
+    public Author getAuthorTheFullName() {
+        return authorTheFullName;
     }
 
     public int getYearOfPublication() {
@@ -26,13 +27,7 @@ public class Book {
         this.yearOfPublication = yearOfPublication;
     }
 
-    public Author getAuthorTheFullName() {
-        return authorTheFullName;
-    }
-    public void setAuthorTheFullName(Author authorTheFullName) {
-        this.authorTheFullName = authorTheFullName;
-    }
-//// Метод toString() преобразовывает данные сложного объекта в одну строку
+    //// Метод toString() преобразовывает данные сложного объекта в одну строку
     @Override
     public String toString() {
         return  "Книга под названием " + bookTitle +
@@ -51,6 +46,4 @@ public class Book {
     public int hashCode() {
         return Objects.hash(bookTitle, authorTheFullName, yearOfPublication);
     }
-
-
 }
